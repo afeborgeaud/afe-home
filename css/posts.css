@@ -1,12 +1,14 @@
 .post-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
 }
 
 .post {
-    flex-basis: 100%;
-    height: 100px;
+    /* flex-basis: 100%; */
+    /* height: 100px; */
+    margin-bottom: 10px;
 }
 
 .post-meta, .post-text {
