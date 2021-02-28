@@ -1,0 +1,42 @@
+.post-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.post {
+    flex-basis: 100%;
+    height: 100px;
+}
+
+.post-meta, .post-text {
+    font-size: 14pt;
+}
+
+.post-meta {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.post-text {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.post a {
+    text-decoration: none;
+    color: black;
+}
+
+.post a:hover {
+    color: dodgerblue;
+}
+
+.post a:hover ~ .post-text {
+    color: dodgerblue;
+}
+
+.post a:hover ~ .post-meta {
+    color: dodgerblue;
+}

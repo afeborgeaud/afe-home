@@ -1,0 +1,60 @@
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: top;
+}
+  
+.item {
+width: 180px;
+height: 180px;
+border-color: black;
+border-style: solid;
+margin: 10px;
+}
+
+.item:hover {
+border-color: dodgerblue;
+}
+
+.item:hover > .portfolio-header {
+visibility: visible; 
+color: dodgerblue;
+}
+
+.item:hover > h1 {
+color: dodgerblue;
+}
+
+.item:hover > .portfolio-text {
+visibility: visible; 
+color: dodgerblue;
+}
+
+.portfolio a {
+/* align-items: center; */
+text-decoration: none;
+color: black;
+text-align: center;
+}
+
+.portfolio h1 {
+margin-bottom: 30px;
+margin-top: 20px;
+font-weight: normal;
+font-size: 24pt;
+}
+
+.portfolio-text {
+visibility: hidden;
+text-align: left;
+margin: 5px;
+}
+
+.portfolio-header {
+visibility: hidden;
+flex-basis: 100%;
+text-align: left;
+margin-left: 5px;
+}

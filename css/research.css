@@ -1,0 +1,9 @@
+.research-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.research {
+    flex-basis: 100%;
+}

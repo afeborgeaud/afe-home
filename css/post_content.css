@@ -1,0 +1,14 @@
+.post-meta, .post-text {
+    font-size: 14pt;
+}
+
+.post-meta {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.post-text {
+    margin-left: 0px;
+    margin-right: 50px;
+}

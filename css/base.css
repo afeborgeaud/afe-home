@@ -1,0 +1,135 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper * {
+  background: #fffef2; /* #fffef2 */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    height: 720px;
+}
+
+header-left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+header-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+side {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+content {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+}
+
+.topnav-right {
+  justify-content: flex-end;
+}
+
+.topnav a {
+  color: black;
+  /* font-weight: bold; */
+  text-decoration: none;
+  font-size: 28px;
+  margin: 14px;
+}
+
+.topnav a:hover {
+  color: red;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer div {
+  margin: 4px;
+}
+
+.footer full {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.ghlogo {
+  width: 34px;
+  height: 34px;
+  background: url("../img/github_logo_black.svg");
+  margin: 8px;
+}
+
+.ghlogo:hover {
+  background: url("../img/github_logo_red.svg");
+}
+
+.lnlogo {
+  width: 34px;
+  height: 34px;
+  background: url("../img/linkedin_logo_black.svg");
+  margin: 8px;
+}
+
+.lnlogo:hover {
+  background: url("../img/linkedin_logo_red.svg");
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+}
+
+.side blank {
+  height: 100px;
+}
+
+.side name {
+  margin-right: 10px;
+  margin-left: 5px;
+  text-align: left;
+  margin-bottom: 20px;
+  /* background-color: red; */
+}
+
+.side about {
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 25px;
+  text-align: left;
+  font-size: 13pt;
+}

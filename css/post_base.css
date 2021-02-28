@@ -1,0 +1,105 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper * {
+  background: #fffef2; /* #fffef2 */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 9fr 1fr;
+    height: 720px;
+}
+
+side {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+content {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+}
+
+.side blank {
+  height: 100px;
+}
+
+.side name {
+  margin-right: 10px;
+  margin-left: 5px;
+  text-align: left;
+  margin-bottom: 20px;
+  /* background-color: red; */
+}
+
+.side about {
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 25px;
+  text-align: left;
+  font-size: 13pt;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer div {
+  margin: 4px;
+}
+
+.footer full {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.ghlogo {
+  width: 34px;
+  height: 34px;
+  background: url("img/github_logo_black.svg");
+  margin: 8px;
+}
+
+.ghlogo:hover {
+  background: url("img/github_logo_red.svg");
+}
+
+.lnlogo {
+  width: 34px;
+  height: 34px;
+  background: url("img/linkedin_logo_black.svg");
+  margin: 8px;
+}
+
+.lnlogo:hover {
+  background: url("img/linkedin_logo_red.svg");
+}
