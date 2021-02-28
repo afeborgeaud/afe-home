@@ -46,7 +46,6 @@ content {
 .topnav {
   display: flex;
   justify-content: flex-start;
-  overflow: hidden;
   flex-direction: row;
   align-items: center;
 }
@@ -77,6 +76,7 @@ content {
 
 .footer div {
   margin: 4px;
+  padding-bottom: 10px;
 }
 
 .footer full {
@@ -88,6 +88,7 @@ content {
   width: 34px;
   height: 34px;
   background: url("../img/github_logo_black.svg");
+  background-repeat: no-repeat;
   margin: 8px;
 }
 
@@ -99,6 +100,7 @@ content {
   width: 34px;
   height: 34px;
   background: url("../img/linkedin_logo_black.svg");
+  background-repeat: no-repeat;
   margin: 8px;
 }
 
@@ -128,7 +130,6 @@ content {
 }
 
 .side about {
-  padding-right: 10px;
   padding-left: 5px;
   padding-right: 25px;
   margin-bottom: 30px;
@@ -141,10 +142,8 @@ content {
   padding-left: 5px;
 }
 
-.locicon {
-  width: 100px;
-  height: 20px;
-  background: url("../img/location_icon_black.svg");
-  background-repeat: no-repeat;
-  /* margin: 8px; */
+.side img {
+  width: 12px;
+  vertical-align: middle;
+  padding-right: 12px;
 }

@@ -4,6 +4,9 @@
     flex-wrap: wrap;
     align-items: left;
     justify-content: top;
+    padding-left: 20px;
+    padding-right: 100px;
+    align-content: flex-start;
 }
   
 .item {
