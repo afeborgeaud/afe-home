@@ -5,8 +5,20 @@
 <body>
 
 <div class="wrapper">
-    <?php include "./side.php";?>
-    <?php $section="projects"; include "./header.php";?>
+    <side class="side">
+        <blank></blank>
+        <name><h1>Anselme Borgeaud</h1></name>
+        <about>
+            Seismic data analyst and computational geophysicist.
+        </about>
+    </side>
+    <header-left class="topnav">
+        <a href="./index.html">*Projects</a>
+        <a href="./research.html">Research</a>
+        <a href="./posts.html">Posts</a>
+        </header-left>
+        <header-right class="items">
+    </header-right>
 
     <content class="portfolio">
         <a href="https://github.com/afeborgeaud/dsmpy" target="_blank">
@@ -48,7 +60,15 @@
         </div></a>
     </content>
     
-    <?php include "./footer.php";?>
+    <footer class="footer">
+        <a href="https://github.com/afeborgeaud" target="_blank">
+        <div class="ghlogo"></div>
+        </a>
+        <a href="https://www.linkedin.com/in/anselme-borgeaud-41499b172/" target="_blank">
+        <div class="lnlogo"></div>
+        </a>
+        <full>&#169; 2021 - 2021 Anselme Borgeaud</full>
+    </footer>
 </div>
 
 </body>
