@@ -94,6 +94,7 @@ content {
 
 .ghlogo:hover {
   background: url("../img/github_logo_red.svg");
+  background-repeat: no-repeat;
 }
 
 .lnlogo {
@@ -106,6 +107,7 @@ content {
 
 .lnlogo:hover {
   background: url("../img/linkedin_logo_red.svg");
+  background-repeat: no-repeat;
 }
 
 .side {

@@ -13,6 +13,13 @@
     margin-bottom: 10px;
 }
 
+.post-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .post-meta, .post-text {
     font-size: 14pt;
 }
@@ -28,19 +35,19 @@
     margin-right: 20px;
 }
 
-.post a {
+.post-container a {
     text-decoration: none;
     color: black;
 }
 
-.post a:hover {
+.post-container a:hover {
     color: dodgerblue;
 }
 
-.post a:hover ~ .post-text {
+.post-container a:hover .post-text {
     color: dodgerblue;
 }
 
-.post a:hover ~ .post-meta {
+.post-container a:hover .post-meta {
     color: dodgerblue;
 }
