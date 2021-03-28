@@ -1,0 +1,13 @@
+.downloads-container {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+table {
+    width: 50%;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+}
