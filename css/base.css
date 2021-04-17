@@ -12,7 +12,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 4fr 4fr;
-    grid-template-rows: 70px 70px auto 70px;
+    grid-template-rows: 70px 20px auto 70px;
     min-height: 700px;
     column-gap: 0px;
 }

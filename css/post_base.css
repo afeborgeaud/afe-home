@@ -132,3 +132,9 @@ footer {
 .lnlogo:hover {
   background: url("img/linkedin_logo_red.svg");
 }
+
+@media only screen and (max-width: 760px) {
+  .content {
+      font-size: smaller;
+  } 
+}
