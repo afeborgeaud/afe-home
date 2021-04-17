@@ -12,17 +12,15 @@
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 4fr 4fr;
-    grid-template-rows: 70px auto 70px;
-    min-height: 680px;
+    grid-template-rows: 70px 70px auto 70px;
+    min-height: 700px;
+    column-gap: 0px;
 }
 
-header-left {
+header {
+  grid-row-start: 1;
+  grid-row-end: 2;
   grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-header-right {
-  grid-column-start: 3;
   grid-column-end: 4;
 }
 
@@ -33,12 +31,12 @@ footer {
 
 side {
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 5;
 }
 
 content {
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -48,15 +46,11 @@ content {
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
-}
-
-.topnav-right {
-  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .topnav a {
   color: black;
-  /* font-weight: bold; */
   text-decoration: none;
   font-size: 28px;
   margin: 14px;
@@ -66,6 +60,12 @@ content {
   color: red;
 }
 
+/* @media only screen and (max-width: 600px) {
+  .topnav {
+    max-width: 700px;
+  }
+} */
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -74,14 +74,11 @@ content {
   justify-content: center;
 }
 
-.footer div {
-  margin: 4px;
-  padding-bottom: 10px;
-}
 
 .footer full {
   flex-basis: 100%;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .ghlogo {
@@ -110,12 +107,28 @@ content {
   background-repeat: no-repeat;
 }
 
+.logo {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.logo a {
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  font-size: 32px;
+  color: red;
+}
+
 .side {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
-  margin: 0px;
+  /* margin: 0px; */
   /* flex-wrap: wrap; */
 }
 
@@ -137,7 +150,7 @@ content {
   margin-bottom: 30px;
   text-align: left;
   font-size: 13pt;
-
+  max-width: 220px;
 }
 
 .side contact {
@@ -148,4 +161,24 @@ content {
   width: 12px;
   vertical-align: middle;
   padding-right: 12px;
+}
+
+@media only screen and (max-width: 829px) {
+  header {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  content {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .topnav {
+    justify-content: center;
+  }
+
+  .topnav a {
+    margin: 5px 14px 5px 14px;
+  }
 }

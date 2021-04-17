@@ -3,9 +3,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: left;
-    justify-content: top;
+    justify-content: center;
     padding-left: 20px;
-    padding-right: 100px;
+    padding-right: 20px;
+    padding-top: 10px;
     align-content: flex-start;
 }
   
