@@ -39,7 +39,8 @@ footer {
 
 .content {
   padding-left: 30px;
-  padding-right: 100px;
+  padding-right: 30px;
+  /* max-width: 900px; */
 }
 
 .side {
@@ -137,4 +138,17 @@ footer {
   .content {
       font-size: smaller;
   } 
+  .side {
+    display: none;
+  }
+
+  content {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
