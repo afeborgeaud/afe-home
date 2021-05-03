@@ -40,6 +40,7 @@ footer {
 .content {
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
   /* max-width: 900px; */
 }
 
@@ -77,11 +78,12 @@ footer {
 }
 
 .side about {
-  margin-left: 5px;
-  margin-right: 25px;
+  padding-left: 5px;
+  padding-right: 25px;
   margin-bottom: 30px;
   text-align: left;
   font-size: 13pt;
+  max-width: 220px;
 }
 
 .side contact {
@@ -132,6 +134,22 @@ footer {
 
 .lnlogo:hover {
   background: url("img/linkedin_logo_red.svg");
+}
+
+.logo {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.logo a {
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  font-size: 32px;
+  color: red;
 }
 
 @media only screen and (max-width: 760px) {
