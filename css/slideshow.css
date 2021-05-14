@@ -1,0 +1,75 @@
+.slider-container {
+    flex-basis: 100%;
+    max-width: 900px;
+    height: 320px;
+    padding: 20px 0 30px 0;
+}
+
+#slider {
+    border: 2px solid black;
+    height: 320px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    position: relative;
+}
+
+#mask {
+    overflow: hidden;
+    height: 320px;
+}
+
+#slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slider li {
+    background-color: white;
+    width: 400px;
+    height: 320px;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slider img {
+    height: 320px;
+    /* width: 400px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slider li.firstanimation {
+    animation: cycle 10s linear infinite;
+ }
+
+ #slider li.secondanimation {
+     animation: cycletwo 10s linear infinite;
+ }
+
+ @keyframes cycle {
+    0%  { top: 0px; }
+    10%  { top: 0px; }
+    40% { top: 0px; opacity:1; z-index:0; }
+    50% { top: 325px; opacity: 0; z-index: 0; }
+    51% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+    80% { top: -325px; opacity: 0; z-index: 0; }
+    90% { top: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+    100%{ top: 0px; opacity: 1; }
+ }
+
+ @keyframes cycletwo {
+    0%  { top: -325px; opacity: 0; } /* Original Position */
+    40% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
+    50% { top: 0px; opacity: 1; }
+    60% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+    90% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+    99% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+    100% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+ }
