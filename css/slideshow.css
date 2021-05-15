@@ -49,8 +49,37 @@
     animation: cycle 10s linear infinite;
  }
 
- #slider li.secondanimation {
-     animation: cycletwo 10s linear infinite;
+#slider li.secondanimation {
+    animation: cycletwo 10s linear infinite;
+}
+
+#slider .tooltip {
+    width: 400px;
+    height: 60px;
+    position: relative;
+    bottom: 75px;
+    left: -410px;
+    transition: all 0.3s ease-in-out;
+}
+
+#slider .tooltip h1 {
+    background: inherit;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 60px;
+    padding: 0 0 0 10px;
+}
+
+ #slider:hover li {
+     animation-play-state: paused;
+ }
+
+ #slider li#first:hover .tooltip {
+    left: 0px;
+ }
+ #slider li#second:hover .tooltip {
+    left: 0px;
  }
 
  @keyframes cycle {
