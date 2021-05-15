@@ -2,7 +2,7 @@
     flex-basis: 100%;
     max-width: 900px;
     height: 320px;
-    padding: 20px 0 30px 0;
+    padding: 20px 0 20px 0;
 }
 
 #slider {
@@ -10,6 +10,7 @@
     height: 320px;
     width: 400px;
     margin-left: auto;
+    /* margin-left: 30px; */
     margin-right: auto;
     overflow: visible;
     position: relative;
@@ -101,4 +102,34 @@
     90% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
     99% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
     100% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+ }
+
+ @media only screen and (max-width: 760px) {
+    .slider-container {
+        width: 250px;
+        height: 200px;
+    }
+    #mask {
+        height: 200px;
+    }
+    #slider {
+        width: 250px;
+        height: 200px;
+    }
+    #slider li {
+        width: 250px;
+        height: 200px;
+    }
+    #slider img {
+        height: 200px;
+    }
+    #slider .tooltip {
+        width: 250px;
+        height: 30px;
+        bottom: 40px;
+    }
+    #slider .tooltip h1 {
+        font-size: 18px;
+        line-height: 30px;
+    }
  }
