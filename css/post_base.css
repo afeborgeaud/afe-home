@@ -3,7 +3,7 @@
 }
 
 .wrapper * {
-  background: #fffef2; /* #fffef2 */
+  background: #fffef2;
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -42,6 +42,10 @@ footer {
   padding-right: 30px;
   padding-bottom: 30px;
   /* max-width: 900px; */
+}
+
+.content-wraper {
+  max-width: 1200px;
 }
 
 .side {

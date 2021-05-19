@@ -1,0 +1,11 @@
+.jp-Cell {
+      padding: var(--jp-cell-padding);
+      margin: 0px;
+      border: none;
+      outline: none;
+      /* background: transparent; */
+    }
+    
+--jp-code-font-size: 14px;
+
+.highlight * {background-color: var(--jp-layout-color)}
