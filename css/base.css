@@ -108,18 +108,18 @@ content {
 }
 
 .logo {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .logo a {
-  font-size: 32px;
+  font-size: 28px;
   color: black;
   text-decoration: none;
 }
 
 .logo a:hover {
-  font-size: 32px;
+  font-size: 28px;
   color: red;
 }
 
@@ -161,6 +161,14 @@ content {
   width: 12px;
   vertical-align: middle;
   padding-right: 12px;
+}
+
+.side logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 25px;
+  max-width: 150px;
 }
 
 @media only screen and (max-width: 829px) {

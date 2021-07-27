@@ -1,20 +1,41 @@
 .downloads-container {
+    display: block;
+    /* justify-content: flex-start;
+    flex-direction: row;
+    align-items: left; */
     padding-left: 30px;
     padding-top: 20px;
 }
 
 table {
     width: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
+    background-color: red;
+    border-collapse: collapse;
+    font-size: 13pt;
 }
 
-th, td {
-    border: 1px solid black;
+th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: left;
 }
+
+td {
+    padding: 5px 7px 5px 7px;
+}
+
+tr:last-child {
+    border-bottom: 1px solid black;
+}
+
+/* tr:nth-child(even) {
+    background-color: red;
+} */
 
 @media only screen and (max-width: 760px) {
     table {
-        font-size: 12px;
+        font-size: 14px;
     } 
  }
