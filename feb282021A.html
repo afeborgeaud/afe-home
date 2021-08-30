@@ -2,83 +2,90 @@
 <html>
 <link rel="stylesheet" href="css/post_base.css">
 <link rel="stylesheet" href="css/post_content.css">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
 <head>
-    <script src="https://kit.fontawesome.com/50de24f5f3.js"
-    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/50de24f5f3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="wrapper">
-    <side class="side">
-        <blank>
-            <a href="posts.html">back</a>
-        </blank>
-        <name><h1>Anselme Borgeaud</h1></name>
-        <about>
-            Seismic data analyst and computational geophysicist.
-        </about>
-        <contact>
-            <img src="img/location_icon_black.svg">Taipei, Taiwan
-        </contact>
-        <logo>
-            <div class="logo">
-                <a href="https://github.com/afeborgeaud"
-                target="_blank" class="fab fa-github-alt"></a>
-            </div>
-            <div class="logo">
-                <a href="https://www.linkedin.com/in/anselme-borgeaud-41499b172/"
-                target="_blank" class="fab fa-linkedin-in"></a>
-            </div>
-        </logo>
-    </side>
-
-    <content class="content">
-        <h1>Probabilistic seismic imaging using a Neighbourhood algorithm</h1>
-        <div class="post-meta">Feb 28, 2021</div>
-
-        <div class="post-text">
-            <p><i>pydsm</i> can compute several seismic models in parallel, which is used in <i>pytomo</i> to run probabilistic waveform inversion
-        with a neighbourhood algorithm (Sambridge, 1999). A few examples of using <i>pytomo</i>
-        to probe the Earth's seismic structure are shown below.
-            </p>
-
-            <div>
-                <h3>D" discontinuity</h3>
-                <p>The video below shows an example of synthetic inversion with a neighbourhood algorithm for the
-                    shear-velocity increase in the D'' layer and the depth of the D'' discontinuity at the bottom of the Earth's mantle
-                    (left: voronoi cells colored by waveform misfit; middle: target, and best inverted model for the current iteration;
-                    right: waveforms for the target, and current best inverted model).
-                </p>
-                <div>
-                    <video style="width:100%" controls>
-                        <source src="img/result.mp4" type="video/mp4">
-                    Your browser does not support the video tag
-                    </video>
+    <div class="wrapper">
+        <side class="side">
+            <blank>
+                <a href="posts.html">back</a>
+            </blank>
+            <name>
+                <h1>Anselme Borgeaud</h1>
+            </name>
+            <about>
+                Seismic data analyst and computational geophysicist.
+            </about>
+            <contact>
+                <img src="img/location_icon_black.svg">Zürich, Switzerland
+            </contact>
+            <logo>
+                <div class="logo">
+                    <a href="https://github.com/afeborgeaud" target="_blank" class="fab fa-github-alt"></a>
                 </div>
-            </div>
-            
-            <div>
-                <h3>D" anisotropy</h3>
-                <p>The same neighbourhood algorithm can be used to infer shear-wave anisotropy (VSH and VSV)
-                    in the D" layer. A synthetic inversion is shown in the video below (left: voronoi cells colored by waveform misfit; middle: target, and best inverted model for the current iteration;
-                    right: radial and transverse component waveforms for the target, and current best inverted model).
-                </p>
-                <div>
-                    <video style="width:100%" controls>
-                        <source src="img/result_aniso.mp4" type="video/mp4">
-                    Your browser does not support the video tag
-                    </video>
+                <div class="logo">
+                    <a href="https://www.linkedin.com/in/anselme-borgeaud-41499b172/" target="_blank"
+                        class="fab fa-linkedin-in"></a>
                 </div>
-            </div>
+            </logo>
+        </side>
 
-        </div>
-    </content>
-    
-    <footer class="footer">
-        <full>&#169; 2021 - 2021 Anselme Borgeaud</full>
-    </footer>
-</div>
+        <content class="content">
+            <h1>Probabilistic seismic imaging using a Neighbourhood algorithm</h1>
+            <div class="post-meta">Feb 28, 2021</div>
+
+            <div class="post-text">
+                <p><i>pydsm</i> can compute several seismic models in parallel, which is used in <i>pytomo</i> to run
+                    probabilistic waveform inversion
+                    with a neighbourhood algorithm (Sambridge, 1999). A few examples of using <i>pytomo</i>
+                    to probe the Earth's seismic structure are shown below.
+                </p>
+
+                <div>
+                    <h3>D" discontinuity</h3>
+                    <p>The video below shows an example of synthetic inversion with a neighbourhood algorithm for the
+                        shear-velocity increase in the D'' layer and the depth of the D'' discontinuity at the bottom of
+                        the Earth's mantle
+                        (left: voronoi cells colored by waveform misfit; middle: target, and best inverted model for the
+                        current iteration;
+                        right: waveforms for the target, and current best inverted model).
+                    </p>
+                    <div>
+                        <video style="width:100%" controls>
+                            <source src="img/result.mp4" type="video/mp4">
+                            Your browser does not support the video tag
+                        </video>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>D" anisotropy</h3>
+                    <p>The same neighbourhood algorithm can be used to infer shear-wave anisotropy (VSH and VSV)
+                        in the D" layer. A synthetic inversion is shown in the video below (left: voronoi cells colored
+                        by waveform misfit; middle: target, and best inverted model for the current iteration;
+                        right: radial and transverse component waveforms for the target, and current best inverted
+                        model).
+                    </p>
+                    <div>
+                        <video style="width:100%" controls>
+                            <source src="img/result_aniso.mp4" type="video/mp4">
+                            Your browser does not support the video tag
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </content>
+
+        <footer class="footer">
+            <full>&#169; 2021 - 2021 Anselme Borgeaud</full>
+        </footer>
+    </div>
 
 </body>
+
 </html>
