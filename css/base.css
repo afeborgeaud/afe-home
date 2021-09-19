@@ -74,53 +74,10 @@ content {
   justify-content: center;
 }
 
-
 .footer full {
   flex-basis: 100%;
   text-align: center;
   padding-bottom: 10px;
-}
-
-.ghlogo {
-  width: 34px;
-  height: 34px;
-  background: url("../img/github_logo_black.svg");
-  background-repeat: no-repeat;
-  margin: 8px;
-}
-
-.ghlogo:hover {
-  background: url("../img/github_logo_red.svg");
-  background-repeat: no-repeat;
-}
-
-.lnlogo {
-  width: 34px;
-  height: 34px;
-  background: url("../img/linkedin_logo_black.svg");
-  background-repeat: no-repeat;
-  margin: 8px;
-}
-
-.lnlogo:hover {
-  background: url("../img/linkedin_logo_red.svg");
-  background-repeat: no-repeat;
-}
-
-.logo {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.logo a {
-  font-size: 28px;
-  color: black;
-  text-decoration: none;
-}
-
-.logo a:hover {
-  font-size: 28px;
-  color: red;
 }
 
 .side {
@@ -140,14 +97,14 @@ content {
   padding-right: 10px;
   padding-left: 5px;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   /* background-color: red; */
 }
 
 .side about {
   padding-left: 5px;
   padding-right: 25px;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
   text-align: left;
   font-size: 13pt;
   max-width: 220px;
@@ -155,6 +112,12 @@ content {
 
 .side contact {
   padding-left: 5px;
+  padding-bottom: 20px;
+}
+
+.side contact a {
+  text-decoration: none;
+  color: black;
 }
 
 .side img {
@@ -166,9 +129,21 @@ content {
 .side logo {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding-top: 25px;
+  justify-content: left;
+  padding-right: 25px;
+  padding-left: 5px;
   max-width: 150px;
+}
+
+.side logo a {
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.side a:hover {
+  color: red;
 }
 
 @media only screen and (max-width: 829px) {
