@@ -3,17 +3,14 @@
 }
 
 .wrapper * {
-  background: #fffef2; /* #fffef2 */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  background: #fffef2;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 4fr 4fr;
     grid-template-rows: 70px 20px auto 70px;
-    min-height: 700px;
+    height: 100vh;
     column-gap: 0px;
 }
 
@@ -59,12 +56,6 @@ content {
 .topnav a:hover {
   color: red;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .topnav {
-    max-width: 700px;
-  }
-} */
 
 .footer {
   display: flex;
