@@ -8,9 +8,9 @@
 }
 
 table {
-    width: 50%;
+    width: 60%;
     /* border: 1px solid black; */
-    margin: auto;
+    /* margin: auto; */
     background-color: red;
     border-collapse: collapse;
     font-size: 13pt;
