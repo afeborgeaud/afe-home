@@ -4,16 +4,13 @@
 
 .wrapper * {
   background: #fffef2;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 9fr 1fr;
-    height: 720px;
+    height: 100vh;
 }
 
 side {
@@ -53,24 +50,17 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
-  margin: 0px;
+  /* margin: 0px; */
 }
 
 .side blank {
   height: 100px;
 }
 
-.side a {
-  padding-left: 5px;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 18pt;
-  color: black;
+.side blank a {
+  font-size: 24px;
   text-decoration: none;
-}
-
-.side a:hover {
-  color: red;
+  color: black;
 }
 
 .side name {
@@ -92,7 +82,38 @@ footer {
 
 .side contact {
   padding-left: 5px;
+  padding-bottom: 20px;
 }
+
+.side contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.side a:hover {
+  color: red;
+}
+
+.side logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-right: 25px;
+  padding-left: 5px;
+  max-width: 150px;
+}
+
+.side logo a {
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.side a:hover {
+  color: red;
+}
+
 
 .side img {
   width: 12px;
@@ -116,44 +137,6 @@ footer {
 .footer full {
   flex-basis: 100%;
   text-align: center;
-}
-
-.ghlogo {
-  width: 34px;
-  height: 34px;
-  background: url("img/github_logo_black.svg");
-  margin: 8px;
-}
-
-.ghlogo:hover {
-  background: url("img/github_logo_red.svg");
-}
-
-.lnlogo {
-  width: 34px;
-  height: 34px;
-  background: url("img/linkedin_logo_black.svg");
-  margin: 8px;
-}
-
-.lnlogo:hover {
-  background: url("img/linkedin_logo_red.svg");
-}
-
-.logo {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.logo a {
-  font-size: 32px;
-  color: black;
-  text-decoration: none;
-}
-
-.logo a:hover {
-  font-size: 32px;
-  color: red;
 }
 
 @media only screen and (max-width: 760px) {
